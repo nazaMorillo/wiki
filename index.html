@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>AcamicaWiki</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+</head>
+<body>
+    <!--Barra de navegacion lateral-->
+    <aside>
+        <div class="logo">
+            <img src="http://lorempixel.com/400/200/">
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">HTML</a></li>
+                <li><a href="css.html">CSS</a></li>
+                <li><a href="git.html">Git</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <div class="principal">
+        <!--Barra de búsqueda a implementar funcionalidad-->
+    <form class="buscador" action="ejecutar-la-busqueda" method="POST">
+        <div class= "barra">
+            <input type="search" id="busqueda" />
+            <button type="submit">Buscar</button>
+        </div>
+    </form>
+     <!--Titulo y descripcion-->
+   <div class="descripcion">
+       <h1>HTML: Lenguaje de marcado de hipertexto</h1>
+    <p>Qué es HTML: es un lenguaje semántico, de texto plano, que da orden y estructura al contenido de un sitio web. Tiene una estructura lógica que se debe respetar para que no exista error y pueda ser interpretado de manera correcta por la máquina. <br>
+
+            Estructura básica de un HTML: <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default">https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default</a>
+            Una página empieza y termina con los tags &lt;html&gt; y &lt;/html&gt;. Dentro de estos tags se encuentran todos los demas tags. Pero los más básicos son &lt;head&gt;&lt;/head&gt; y &lt;body&gt;&lt;/body&gt;.
+             El tag Head contiene tags vitales como el título de la página, los vínculos a los documentos que contienen el diseño y el comportamiento, entre otros.
+            <br>
+            ¿Cómo se escribe una etiqueta?: &lt;inicio&gt; Contenido &lt;/fin&gt; (Sin embargo hay etiquetas que no se cierran)
+    </div>
+
+    <!--Subnavegacion-->
+    <nav class="indice">
+        <h2>Indice</h2>
+        <ul>
+            <li><a href="#doctype">!Doctype</a></li>
+            <li><a href="#html">html</a> </li>
+            <li><a href="#meta">Meta</a></li>
+            <li><a href="#div">Secciones</a></li>
+            <li><a href="#nav">Nav</a></li>
+            <li><a href="#form">Formularios</a></li>
+            <li><a href="#head">Head</a></li>
+            <li><a href="#header">Header</a></li>
+            <li><a href="#titulos">Títulos</a></li>
+            <li><a href="#parrafo">Párrafo</a></li>
+            <li><a href="#script">Script</a></li>
+            <li><a href="#link">Links</a></li>
+            <li><a href="#listas">Listas</a></li>
+            <li><a href="#comentario">Comentarios</a></li>
+            <li><a href="#imagen">Imagenes</a></li>
+            <li><a href="#video">Video</a></li>
+        </ul>
+    </nav>
+
+    <!--Contenido-->
+    <div class="contenido">
+        <p id="doctype">&lt;!DOCTYPE&gt; Debe ser lo primero en el documento, antes del tag html</p>
+
+        <p id="html">&lt;html&gt; es el contenedor de todos los demas tags, le dice al navegador que es un documento html</p>
+
+        <p id="meta">&lt;meta&gt; el concepto de metadatos se refiere a aquellos datos que hablan de los datos, es decir,
+             describen el contenido de los archivos o la información de los mismos. <br>
+             Se suele usar para dar información acerca del autor de la página,descripción de la página, última modificación,palabras clave(keywords), etc
+            </p>
+
+        <p id="div">&lt;div&gt; define una sección o división en el documento HTMl</p>
+
+        <p>&lt;section&gt; define secciones en un documento como un capitulo, header o footer.
+             <a href="https://www.w3.org/TR/html/sections.html#the-section-element" target="_blank">
+                Para mas info sobre este tag</a> </p>
+
+        <p id="nav">&lt;nav&gt; se usa para incluir links de navegación</p>
+
+        <p id="form">&lt;form&gt; se utiliza para crear formularios en HTML.
+             <a href="https://www.w3schools.com/tags/tag_form.asp" target="_blank">
+                Para mas info sobre este tag</a> <br>Ejemplo<br>
+                &lt;form action="/action_page.php" method="get"&gt;<br>
+                    First name: &lt;input type="text" name="fname"&gt;<br>
+                    Last name: &lt;input type="text" name="lname"&gt;<br>
+                    &lt;input type="submit" value="Submit"&gt;<br>
+                    &lt;/form&gt;
+            </p>
+
+        <p id="head">&lt;head&gt;</p>
+
+        <p id="header">&lt;header&gt;</p>
+
+        <p id="titulos">&lt;h1&gt; hasta &lt;h6&gt;</p>
+
+        <p id="parrafo">&lt;p&gt;</p>
+
+        <p id="script">&lt;script&gt;</p>
+
+        <p id="link">&lt;a&gt;</p>
+
+        <p id="listas">&lt;ul&gt;&lt;ol&gt;</p>
+
+        <p id="comentario">&lt;!--Aqui se escribe el comentario--&gt;</p>
+
+        <p id="imagen">&lt;img&gt; Se utiliza para incluir imagenes,
+             debe incluir dentro un src con la referencia de la imagen, </p>
+
+        <p id="video">&lt;video&gt;</p>
+
+    </div>
+
+    </div>
+</body>
+</html>
